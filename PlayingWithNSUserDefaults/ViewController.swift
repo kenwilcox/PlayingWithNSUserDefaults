@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         defaults.setInteger(25, forKey: "Age")
         defaults.setBool(true, forKey: "UseTouchId")
         defaults.setDouble(M_PI, forKey: "Pi")
+        
+        defaults.setObject("Jose Jones", forKey: "Name")
+        defaults.setObject(NSDate(), forKey: "LastRun")
     }
     
     override func didReceiveMemoryWarning() {

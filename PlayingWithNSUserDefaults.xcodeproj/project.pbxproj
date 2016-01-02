@@ -47,6 +47,8 @@
 		BEE9B6D41C377F3F004EA4EA /* PlayingWithNSUserDefaultsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayingWithNSUserDefaultsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE9B6D81C377F3F004EA4EA /* PlayingWithNSUserDefaultsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingWithNSUserDefaultsUITests.swift; sourceTree = "<group>"; };
 		BEE9B6DA1C377F3F004EA4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE9B6E61C378561004EA4EA /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		BEE9B6E71C378561004EA4EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,8 @@
 		BEE9B6AC1C377F3F004EA4EA = {
 			isa = PBXGroup;
 			children = (
+				BEE9B6E61C378561004EA4EA /* LICENSE.md */,
+				BEE9B6E71C378561004EA4EA /* README.md */,
 				BEE9B6B71C377F3F004EA4EA /* PlayingWithNSUserDefaults */,
 				BEE9B6CC1C377F3F004EA4EA /* PlayingWithNSUserDefaultsTests */,
 				BEE9B6D71C377F3F004EA4EA /* PlayingWithNSUserDefaultsUITests */,
@@ -491,6 +495,7 @@
 				BEE9B6DF1C377F3F004EA4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEE9B6E01C377F3F004EA4EA /* Build configuration list for PBXNativeTarget "PlayingWithNSUserDefaultsTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +504,7 @@
 				BEE9B6E21C377F3F004EA4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEE9B6E31C377F3F004EA4EA /* Build configuration list for PBXNativeTarget "PlayingWithNSUserDefaultsUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +513,7 @@
 				BEE9B6E51C377F3F004EA4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

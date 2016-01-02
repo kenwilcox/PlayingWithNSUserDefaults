@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         
         defaults.setObject("Jose Jones", forKey: "Name")
         defaults.setObject(NSDate(), forKey: "LastRun")
+        
+        let array = ["Hello", "World"]
+        defaults.setObject(array, forKey: "SavedArray")
+        
+        let dict = ["Name": "Jose", "Country": "Greenland"]
+        defaults.setObject(dict, forKey: "SacedDict")
     }
     
     override func didReceiveMemoryWarning() {

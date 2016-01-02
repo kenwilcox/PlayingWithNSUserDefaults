@@ -22,6 +22,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        defaults.setInteger(25, forKey: "Age")
+        defaults.setBool(true, forKey: "UseTouchId")
+        defaults.setDouble(M_PI, forKey: "Pi")
+        
+        defaults.setObject("Jose Jones", forKey: "Name")
+        defaults.setObject(NSDate(), forKey: "LastRun")
+        
+        let array = ["Hello", "World"]
+        defaults.setObject(array, forKey: "SavedArray")
+        
+        let dict = ["Name": "Jose", "Country": "Greenland"]
+        defaults.setObject(dict, forKey: "SavedDict")
     }
     
     func applicationDidEnterBackground(application: UIApplication) {
@@ -31,6 +46,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let age = defaults.integerForKey("Age")
+        let useTouchId = defaults.boolForKey("UseTouchId")
+        let pi = defaults.doubleForKey("Pi")
+        let name = defaults.objectForKey("Name") as? String ?? "Unknown"
+        let array = defaults.objectForKey("SavedArray") as? [String] ?? [String]()
+        let dict = defaults.objectForKey("SavedDict") as? [String: String] ?? [String: String]()
+        
+        print("Age: \(age)")
+        print("UseTouchId: \(useTouchId)")
+        print("Pi: \(pi)")
+        print("Name: \(name)")
+        print("Array: \(array)")
+        print("Dict: \(dict)")
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
